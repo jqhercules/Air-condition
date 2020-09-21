@@ -85,6 +85,7 @@ function CitySearch() {
   //
   useEffect(() => {
     window.addEventListener('click', handleBlur);
+    searchRef.current.focus();
 
     return () => {
       window.removeEventListener('click', handleBlur);
@@ -114,7 +115,7 @@ function CitySearch() {
           ref={searchRef}
         />
 
-        <ul className="City-search__suggestions" onBlur={handleBlur}>
+        <ul className="City-search__suggestions">
           {suggessionList}
         </ul>
       </div>
