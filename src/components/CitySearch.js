@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef, useCallback} from 'react';
 import CityCard from './CityCard';
 import CityStyles from './styles/CityStyles';
 
-const API_URL = 'https://cors-anywhere.herokuapp.com/https://api.openaq.org/v1/locations?country=GB';
-// const API_URL = 'https://api.openaq.org/v1/locations?country=GB';
+// const API_URL = 'https://cors-anywhere.herokuapp.com/https://api.openaq.org/v1/locations?country=GB';
+const API_URL = 'https://api.openaq.org/v1/locations?country=GB';
 
 function CitySearch() {
 
