@@ -37,9 +37,13 @@ function CitySearch() {
 
     const response = await fetch(API_URL);
     const data = await  response.json();
-    setCities(data.results);
 
-    // .catch(err => setHasError(true))
+    if(data.results.length > 0) {
+      setCities(data.results);
+    } else {
+      setHasError(true);
+    }
+
   }
 
   const handleClick = (suggest) => {
