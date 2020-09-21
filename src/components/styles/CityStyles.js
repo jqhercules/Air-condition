@@ -37,6 +37,10 @@ export default styled.section`
       width: 100%;
       z-index: 10;
       font-size: 1.4rem;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     &__suggestions {

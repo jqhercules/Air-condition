@@ -352,9 +352,6 @@ template {
   display: none;
 }
 
-  /* Custom  - MOVE ME*/
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
-
   html {
     box-sizing: border-box;
     min-height: 100%;
@@ -369,6 +366,18 @@ template {
   body {
     font-family: 'Montserrat', sans-serif;
   }
+
+ .App {
+  color: #fff;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: ${({width}) => width || '800px' };
+
+  @media ${({theme}) => theme.mediaQueries.below768} {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+ }
 `;
 
 export default GlobalStyle;
