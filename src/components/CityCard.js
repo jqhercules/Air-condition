@@ -13,7 +13,7 @@ function CityCard(props) {
 
   // Conver UTC time convert
   const converDateTime = (timestamp) => {
-    return moment().fromNow(timestamp);
+    return moment(timestamp).fromNow();
   }
 
   // List all Measurements levels
